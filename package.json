@@ -1,0 +1,32 @@
+{
+  "name": "mindpath",
+  "version": "1.0.0",
+  "description": "mindpath backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "dev": "nodemon src/index.js",
+    "serve": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nikhilsharma",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^0.3.49",
+    "@langchain/core": "^0.3.66",
+    "@langchain/groq": "^0.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "groq-sdk": "^0.29.0",
+    "langchain": "^0.3.30",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.4",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.10",
+    "pdf-parse": "^1.1.1"
+  }
+}
