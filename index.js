@@ -30,13 +30,7 @@ app.use(express.json());
 // Middleware
 app.use(
   cors({
-    origin: [
-      "https://mind-mentor-pearl.vercel.app",
-      "https://mind-mentor.kartiklabhshetwar.me",
-      "http://localhost:3000",
-      "https://www.mind-mentor.ink",
-      "https://mind-mentor.ink",
-    ],
+    origin: process.env.CORS_ORIGIN || '*',
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
