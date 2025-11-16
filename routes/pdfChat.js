@@ -81,6 +81,7 @@ router.get('/:id', async (req, res) => {
 
 // Upload and process PDF
 router.post('/upload', upload.single('pdf'), async (req, res) => {
+  console.log('Upload endpoint hit');
   try {
     console.log('Upload request received');
 
